@@ -1,0 +1,26 @@
+<template>
+    <h5 class="slds-var-m-around_x-small">CSS Behaviour</h5>
+    <lightning-card title="Css Behaviour">
+        <h4 class="slds-var-m-around_x-small">Parent CSS can't reach into a child component</h4>
+        <div class="slds-var-m-around_x-small">
+            <p class="slds-m-around_medium">Hi I am Parent...</p>
+        </div>
+
+        <h4 class="slds-var-m-around_x-small">Parent CSS can style a host element</h4>
+        <div>
+            <c-ninteen-com_-css-behaviour_-child class="back slds-m-around_medium"></c-ninteen-com_-css-behaviour_-child>
+        </div>
+
+        <h4 class="slds-var-m-around_x-small">Child component CSS can reach up and style it's own host element</h4>
+        <div>
+            <c-ninteen-com_-css-behaviour_-child1 class="slds-m-around_medium"></c-ninteen-com_-css-behaviour_-child1>
+        </div>
+
+        <h4 class="slds-var-m-around_x-small">Element pass into a slot can be style from parent component only</h4>
+        <div>
+            <c-ninteen-com_-css-behaviour_-child class="slds-m-around_medium">
+                <h3>Hey I am going to slot</h3>
+            </c-ninteen-com_-css-behaviour_-child>
+        </div>   
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="SenderName" type="String"></aura:attribute>
+    <aura:attribute name="SenderAge" type="Integer"></aura:attribute>
+    <aura:attribute name="SenderCompany" type="String"></aura:attribute>
+    <h5>Aura Coexistance</h5>
+    <lightning:card title="Aura Component">
+        <div class="slds-var-m-around_x-small">
+            {!v.SenderName} <br/>
+            {!v.SenderAge} <br/>
+            {!v.SenderCompany}
+            <c:twentyCom_LwcToAuraCommunication
+                    msgfromaura = "Hi I am coming from Aura"
+                    onsenddata = "{!c.gwtLwcEventData}"
+            ></c:twentyCom_LwcToAuraCommunication>
+        </div>
+    </lightning:card>
+</aura:component>

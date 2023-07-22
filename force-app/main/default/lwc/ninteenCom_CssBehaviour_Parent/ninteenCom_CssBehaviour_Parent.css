@@ -1,0 +1,36 @@
+p{
+    font-size: 15px;
+    color: crimson;
+    font-weight: bold;
+}
+c-ninteen-com_-css-behaviour_-child 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: green;
+    display: block;
+    background-color: darkorange;
+}
+h3{
+    display: block;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid yellow;
+    color: green;
+    
+    
+}
+h5{
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: aquamarine;
+}
+h4{
+    border: 2px solid rgb(3, 136, 92);
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: rgb(3, 136, 92);
+    color: white;
+
+}

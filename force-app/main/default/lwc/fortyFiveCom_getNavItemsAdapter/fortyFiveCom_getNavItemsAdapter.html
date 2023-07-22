@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="getNavItems Adapter">
+        <div class="slds-var-m-around_x-small">
+            <template if:true={navItemData}>
+                Developer Name : {navItemData.developerName} <br/>
+                Object Api Name : {navItemData.objectApiName} <br/>
+                PageReference action : {navItemData.pageReference.attributes.actionName} <br/>
+                PageReference type : {navItemData.pageReference.type}
+            </template>
+        </div>
+    </lightning-card>
+</template>

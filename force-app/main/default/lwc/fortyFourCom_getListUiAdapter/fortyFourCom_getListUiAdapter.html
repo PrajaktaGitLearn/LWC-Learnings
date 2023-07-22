@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="getListUi Adapter">
+        <div class="slds-var-m-around_x-small">
+           <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Alias</th>
+                        <!-- <th>RecordTypeId</th> -->
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={accounts} for:item="acc">
+                        <tr key={acc.fields.Id.value}>
+                            <td>{acc.fields.Name.value}</td>
+                            <td>{acc.fields.Owner.value.fields.Alias.value}</td>
+                            <!-- <td>{acc.recordTypeId}</td> -->
+                            <td>{acc.fields.Phone.value}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Previous" variant="brand" onclick={previousToken} class="slds-var-m-around_x-small"></lightning-button>
+            <lightning-button label="Next" variant="brand" onclick={nextToken}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

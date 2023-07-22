@@ -1,0 +1,57 @@
+<template>
+
+    <h5>1st LWC component</h5><br/>
+    <div><strong>Hii.. I am helloWorld LWC component</strong></div>
+    <br/><br/>
+    
+    <h5>one way data binding</h5><br/>
+    <div class="divstyle">
+        My name is {name} <br/>
+        I am learning a course of {course}
+    </div>
+
+    <h5>Two Way Data binding</h5>
+    <div class="slds-m-around_x-small">
+        <lightning-card title="Two Way Data binding">
+            <lightning-input type="text" onkeyup={changeCourse} class="slds-m-around_x-small"></lightning-input>
+            <div>
+                <b>{name}</b> is studying {course} course
+            </div>
+        </lightning-card>
+    </div>
+
+    <h5>Track Property</h5>
+    <div class="slds-m-around_x-small">
+        <lightning-card title="@track Property">
+            <lightning-input type="text" onkeyup={trackChange} class="slds-m-around_x-small"></lightning-input>
+            <div>
+                <b>{employee.empname}</b> is working as {employee.designation} at {employee.organization}
+            </div>
+        </lightning-card>
+    </div>
+
+    <h5>Without using Track Property</h5>
+    <div class="slds-m-around_x-small">
+        <lightning-card title="Without u\7ing @track Property">
+            <lightning-input type="text" onkeyup={trackChange1} class="slds-m-around_x-small"></lightning-input>
+            <div>
+                <b>{student.stdname}</b> is studying at class {student.stdclass}
+            </div>
+        </lightning-card>
+    </div>
+
+    <h5>Getter Property</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="getter property">
+            
+            <div>
+                <b>Addition : </b> {addition} <br/>
+                <b>Substraction : </b> {substraction} <br/>
+                <b>Multiplication : </b> {multiplication} <br/>
+                <b>Division : </b> {division} <br/>
+
+                <b>First array value : </b> {arrayValues}
+            </div>
+        </lightning-card>
+    </div>
+</template>

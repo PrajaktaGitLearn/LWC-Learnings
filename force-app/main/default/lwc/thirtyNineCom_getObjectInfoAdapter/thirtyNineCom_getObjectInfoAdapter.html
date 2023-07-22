@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="getObjectInfo wire Adapter using function">
+        <div class="slds-var-m-around_x-small">
+            Default record Type Id is : {defaultrecordtyprid}<br/>
+            Api Name : {apiName} <br/>
+            Plural Name ob object : {pluralName} <br/>
+            Key Prefix of Account : {objectkeyprefix} <br/>
+        </div>
+    </lightning-card>
+    <div class="slds-var-m-around_x-small"></div>
+    <lightning-card title="getObjectInfo wire Adapter using property">
+        <div class="slds-var-m-around_x-small">
+            <template if:true={objectinfoproperty.data}>  
+                Default record Type Id is : {objectinfoproperty.data.defaultRecordTypeId} <br/>
+                Api Name : {objectinfoproperty.data.apiName}<br/>
+                Plural Name ob object : {objectinfoproperty.data.labelPlural}<br/>
+                Key Prefix of Account : {objectinfoproperty.data.keyPrefix}
+
+            </template>
+        </div>
+    </lightning-card>
+</template>

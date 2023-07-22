@@ -1,0 +1,19 @@
+@import 'c/ninthCom_SharedCssComponent';
+/* h5{
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: aquamarine;
+}
+.wrap{
+    background-color: darkorchid;
+
+} */
+.style{
+    width:90%;
+    background-color: rgb(7, 249, 19);
+}
+b:hover{
+    color: crimson;
+    font-size: 15px;
+}

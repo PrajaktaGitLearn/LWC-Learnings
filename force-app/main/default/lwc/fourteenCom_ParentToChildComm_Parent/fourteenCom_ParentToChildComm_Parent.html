@@ -1,0 +1,45 @@
+<template>
+    <h5 class="slds-m-around_x-small"> Parent to Child Communication using primitive datatype</h5>
+    <c-fourteen-com_-parent-to-child-comm_-child
+    card-title="Parent to Child Communication using Primitive Data"
+    print-message="Hey Child , I am Parent..."
+    
+
+    >
+</c-fourteen-com_-parent-to-child-comm_-child>
+
+
+<div class="slds-var-m-around_medium"></div>
+<h5 class="slds-var-m-around_x-small"> Parent to Child Communication using non-primitive datatype</h5>
+<c-fourteen-com_-parent-to-child-comm_-child2
+    carousel-card = "Parent to Child Communication using Non-Primitive Data"
+    carousel-details = {carouselData}>
+
+</c-fourteen-com_-parent-to-child-comm_-child2>
+
+<div class="slds-var-m-around_medium"></div>
+<h5 class="slds-var-m-around_x-small"> Parent to Child Communication on action at parent</h5>
+    <lightning-card title="Parent to child communication on action at parent">
+        <div class="slds-var-m-around_x-small">
+            <lightning-input label="Enter Progress" class="slds-var-m-around_medium" value={progressVal} onkeyup={changeProgress}></lightning-input>
+            <c-fourteen-com_-parent-to-child-comm_-child3
+                    ring-value={progressVal}
+            >
+
+            </c-fourteen-com_-parent-to-child-comm_-child3>
+        </div>
+    </lightning-card>
+
+<div class="slds-var-m-around_medium"></div>
+<h5 class="slds-var-m-around_x-small"> Calling Child method from parent</h5>
+        <lightning-card title="Calling Child method from parent component">
+        <lightning-input label="Enter Slider value" class="slds-var-m-around_medium" value={sliderVal} onkeyup={changeSlider}></lightning-input>
+        <lightning-button class="slds-var-m-around_x-small" label="Reset slider" variant="brand" onclick={ResetSlider}></lightning-button>
+        <c-fourteen-com_-parent-to-child-comm_-child4
+            slider-value = {sliderVal}
+        >
+
+        </c-fourteen-com_-parent-to-child-comm_-child4>
+</lightning-card>
+
+</template>

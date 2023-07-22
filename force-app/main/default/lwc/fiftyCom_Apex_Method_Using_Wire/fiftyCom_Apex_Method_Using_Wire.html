@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Fetch Apex data using Wire Property">
+        <div class="slds-var-m-around_x-small">
+            <template if:true={accounts.data}>
+                <template for:each={accounts.data} for:item="account">
+                    <div class="slds-var-m-around_x-small" key={account.Id}>
+                      <p> Name : <strong>{account.Name}</strong> </p>
+                      <p> Type : <strong>{account.Type}</strong></p>
+                      <p> Industry : <strong>{account.Industry}</strong> <br/></p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+    <div class="slds-var-m-around_x-small"></div>
+    <lightning-card title="Fetch Apex data using Wire Function">
+        <div class="slds-var-m-around_x-small">
+            <template if:true={accountListRetrieved}>
+                <template for:each={accountListRetrieved} for:item="account">
+                    <div class="slds-var-m-around_x-small" key={account.Id}>
+                      <p> Name : <strong>{account.Name}</strong> </p>
+                      <p> Type : <strong>{account.newType}</strong></p>
+                      <p> Industry : <strong>{account.Industry}</strong> <br/></p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,26 @@
+<template>
+    <h5 class="slds-var-m-around_x-small">Component LifeCycle Hooks</h5>
+    <lightning-card title="Life Cycle Hook Parent">
+        <div class="slds-var-m-around_x-small">
+            <lightning-input type="text" label="Enter Text" onkeyup={changeHandler}></lightning-input>
+            {name}
+        </div>
+
+        <template if:true={isChildVisible}>
+            <lightning-button label="Remove Child" title="Remove Child" variant="brand" onclick={changeVisible}></lightning-button>
+            
+        </template>
+        
+        <template if:false={isChildVisible}>
+            <lightning-button label="Show Child" title="Show Child" variant="brand" onclick={changeVisible}></lightning-button>
+             {errorMessage}
+        </template>
+
+        <!-- error message : {errorMessage} -->
+       
+    </lightning-card>
+    <template if:true={isChildVisible}>
+        <c-twelve-com_-life-cycle-hook-child></c-twelve-com_-life-cycle-hook-child>
+    </template>
+    
+</template>

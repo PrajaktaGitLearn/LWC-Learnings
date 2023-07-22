@@ -1,0 +1,29 @@
+h5{
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: aquamarine;
+}
+p:hover{
+    color: rgb(250, 4, 45);
+    font-weight: bold;
+    font-size: 20px;
+}
+.eightPart{
+    color: white;
+}
+.fourPart{
+    color: white;
+}
+.eightPart:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.fourPart:hover{
+    background-color: yellow;
+    color: rgb(250, 5, 5);
+    font-weight: bold;
+    font-size: 15px;
+}

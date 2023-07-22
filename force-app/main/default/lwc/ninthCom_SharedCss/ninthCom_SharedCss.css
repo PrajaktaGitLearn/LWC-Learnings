@@ -1,0 +1,24 @@
+@import 'c/ninthCom_SharedCssComponent';
+/* h5{
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: aquamarine;
+}
+.wrap{
+    background-color: darkorchid;
+
+} */
+.style{
+    width:70%;
+    background-color: crimson;
+}
+ul{
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li:hover{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    color: rgb(176, 0, 252);
+}

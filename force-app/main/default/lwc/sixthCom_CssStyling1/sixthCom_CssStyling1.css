@@ -1,0 +1,16 @@
+h5{
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: aquamarine;
+}
+.exe{
+    color: yellow;
+    background-color: coral;
+    font-size: 20px;
+}
+.exe:hover{
+    color: rgb(106, 7, 152);
+    background-color: rgb(114, 248, 12);
+    font-size: 30px;
+}

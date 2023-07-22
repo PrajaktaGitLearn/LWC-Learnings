@@ -1,0 +1,64 @@
+<template>
+    <lightning-card title="Navigation Service">
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Home" variant="brand" onclick={navigatToHome}></lightning-button>
+           
+         </div>
+         <div class="slds-var-m-around_x-small">
+            <lightning-button  label="Navigate to Chatter" variant="brand" onclick={navigatToChatter}></lightning-button>
+         </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to New Record" variant="brand" onclick={navigatToNewRecord}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to New Record with Default values" variant="brand" onclick={navigatToNewRecordWithDefaultValues}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to List View" variant="brand" onclick={navigatToListView}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Files" variant="brand" onclick={navigatToFiles}></lightning-button>
+        </div>
+        
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Record Page in View Mode" variant="brand" onclick={navigatToRecordPageInViewMode}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Record Page in Edit Mode" variant="brand" onclick={navigatToRecordPageInEditMode}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Tab" variant="brand" onclick={navigatToTab}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Related Record" variant="brand" onclick={navigatToRelatedRecord}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to Web Page" variant="brand" onclick={navigatToWebPage}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to LWC Component" variant="brand" onclick={navigatToLwcComponent}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to AURA Component" variant="brand" onclick={navigatToAuraComponent}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Navigate to VF Page" variant="brand" onclick={navigatToVfPage}></lightning-button>
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            Cuurent Page Reference : {pageRefrence}
+        </div>
+
+    </lightning-card>
+</template>

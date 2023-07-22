@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="getPicklistaluesByRecordType Adapter">
+        <div class="slds-var-m-around_x-small">
+            <template if:true={industryOptions}>
+            <lightning-combobox
+            name="Industry"
+            label="Industry"
+            value={selectedIndustry}
+            placeholder="Select Industry"
+            options={industryOptions}
+            onchange={handleIndustryChange} ></lightning-combobox>
+            <br/>
+            Selected Industry : {selectedIndustry}
+            </template>
+            
+        </div>
+
+        <div class="slds-var-m-around_x-small">
+            <template if:true={ratingOptions}>
+            <lightning-combobox
+            name="Rating"
+            label="Rating"
+            value={selectedRating}
+            placeholder="Select Rating"
+            options={ratingOptions}
+            onchange={handleRatingChange} ></lightning-combobox>
+            <br/>
+            Selected Rating : {selectedRating}
+            </template>
+            
+        </div>
+    </lightning-card>
+</template>

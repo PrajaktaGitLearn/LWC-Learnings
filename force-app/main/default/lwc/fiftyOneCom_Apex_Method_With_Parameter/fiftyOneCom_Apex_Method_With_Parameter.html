@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Fetch Apex data using Wire Property">
+        <div class="slds-var-m-around_x-small">
+            <lightning-combobox
+                        name="progress"
+                        label="Status"
+                        value={selectedType}
+                        placeholder="Select Type"
+                        options={options}
+                        onchange={handleChange} >
+            </lightning-combobox>
+
+            <template if:true={filteredAccounts.data}>
+                <template for:each={filteredAccounts.data} for:item="account">
+                    <div class="slds-var-m-around_x-small" key={account.Id}>
+                        <p>Name : <strong>{account.Name}</strong></p>
+                        <p>Type : <strong>{account.Type}</strong></p>
+                        <p>Industry : <strong>{account.Industry}</strong></p>
+                    </div>
+
+                    
+                </template>
+                
+
+            </template>
+        </div>
+    </lightning-card>
+</template>

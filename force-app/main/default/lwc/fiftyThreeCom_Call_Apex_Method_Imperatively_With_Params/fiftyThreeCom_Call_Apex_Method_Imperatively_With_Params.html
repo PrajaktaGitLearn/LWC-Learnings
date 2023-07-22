@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Calling Apex Method imperatively with parameter">
+        <div class="slds-var-m-around_x-small">
+            <lightning-input 
+                label="Search Account" 
+                type="search" 
+                value={searchKey}
+                onchange={searchHandler}
+            >
+        </lightning-input>
+        </div>
+        <div class="slds-var-m-around_x-small">
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <div class="slds-var-m-around_x-small" key={account.Id}>
+                      <p> Name : <strong>{account.Name}</strong> </p>
+                      <p> Type : <strong>{account.Type}</strong></p>
+                      <p> Industry : <strong>{account.Industry}</strong> <br/></p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

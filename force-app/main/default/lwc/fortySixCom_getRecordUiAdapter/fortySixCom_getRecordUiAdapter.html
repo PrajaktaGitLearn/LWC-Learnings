@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="getRecordUi Adapter">
+        <div class="slds-var-m-around_x-small">
+            RecordId : {recordId}
+            <template for:each={recordUiFields} for:item="field">
+                <div key={field.label}>
+                    <strong>{field.label}</strong>: {field.value} <br/>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

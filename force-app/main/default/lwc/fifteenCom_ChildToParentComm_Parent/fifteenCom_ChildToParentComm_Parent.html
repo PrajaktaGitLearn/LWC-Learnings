@@ -1,0 +1,13 @@
+<template>
+    <h5 class="slds-var-m-around_x-small">Child to parent communication using simple Event</h5>
+    <lightning-card title="Child to parent communication using simple Event">
+        <div class="slds-var-m-around_x-small" onclick={finalEvent}>
+            <lightning-button label="Show Modal" variant="brand" onclick={handleModal}></lightning-button><br/>
+           Hi {name} !!<br/>
+            {msg}
+            <template if:true={showModal}>
+                <c-fifteen-com_-child-to-parent-comm_-child onclose={closeThisModal}></c-fifteen-com_-child-to-parent-comm_-child>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,22 @@
+<!-- sldsValidatorIgnore -->
+
+<template>
+    <h5>Access Elements in component</h5>
+    <lightning-card title="Access Elements in component">
+        <div class="slds-m-around_x-small">
+            <p>Hi need to access me using querySelector</p>
+        </div>
+        <lightning-button label="Access Elements" class="slds-m-around_x-small" variant="brand" onclick={accessElements}></lightning-button>
+        <br/>
+        <label class="slds-form-element__label slds-m-around_x-small" for="textarea-id-01">Show data fetched on button click</label> 
+        <div class="slds-form-element__control slds-m-around_x-small">
+            <textarea placeholder="Placeholder text…" class="slds-textarea ">{pelement}</textarea>
+        </div>
+
+        <template for:each={organization} for:item="org">
+            <div key={org} class="arrelem">{org}</div>
+        </template>
+
+        <div class="lwcdom" lwc:dom="manual"></div>
+    </lightning-card>
+</template>

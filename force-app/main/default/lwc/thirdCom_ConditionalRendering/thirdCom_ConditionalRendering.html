@@ -1,0 +1,32 @@
+<template>
+    <h5>Conditional Rendering - if:true and if:false</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="Directives">
+            <template if:true={expression}>
+                <div>
+                    As expression true therefore content visible
+                </div>
+            </template>
+            <lightning-button label="Show Data" variant="brand" title="Show Data" onclick={showData}></lightning-button>
+            <template if:false={expression}>
+                Expression is false.Please click the button to make it true...
+            </template>
+        </lightning-card>
+    </div>
+
+    <h5>Directive example2</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="example 2">
+            CAPTCHA : {captchaval}
+            <lightning-input type="text" onkeyup={checkInput} class="slds-var-m-around_x-small" 
+            label="Type Given Captcha to complete Authentication"></lightning-input>
+            <template if:true={returnInputValue}>
+                <div>Authentication Completed</div>
+            </template>
+            <template if:false={returnInputValue}>
+                <div>Authentication Failed</div>
+            </template>
+        </lightning-card>
+    </div>
+
+</template>

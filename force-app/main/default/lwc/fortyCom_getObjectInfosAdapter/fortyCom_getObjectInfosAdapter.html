@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="getObjectInfos wire Adapter">
+        <div class="slds-var-m-around_x-small">
+            <template if:true={objectsInformation}>
+                <template for:each={objectsInformation.results} for:item="objInfo">
+                    <div key={objInfo.result.apiName} class="divborder">
+                        Object ApiName : <strong>{objInfo.result.apiName}</strong><br/>
+                        Default Record Type Id : {objInfo.result.defaultRecordTypeId}<br/>
+                        KeyPrefix : <strong>{objInfo.result.keyPrefix}</strong><br/>
+                        Status Code : {objInfo.statusCode}<br/>
+                        Theme Color : {objInfo.result.themeInfo.color}
+                        
+                    </div>
+                </template>
+            </template>
+            
+        </div>
+    </lightning-card>
+</template>

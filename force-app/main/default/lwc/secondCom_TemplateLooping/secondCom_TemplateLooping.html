@@ -1,0 +1,71 @@
+<template>
+    <h5>Template Looping - for:each</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="Template looping - for:each">
+            <template for:each={emparr} for:item="emp">
+                
+                <ul class="slds-has-dividers_around-space" key={empname}>
+                    <li class="slds-item slds-var-m-around_x-small">{emp}</li>
+                </ul>
+            </template>
+           
+        </lightning-card>
+
+    </div>
+
+    <h5>Template Looping - for:each loop on array of objects</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="Template looping - for:each loop on array of objects">
+            <template for:each={stdlist} for:item="std">
+                
+                <ul class="slds-has-dividers_around-space" key={std.roll_no}>
+                    <li class="slds-item slds-var-m-around_x-small">
+                        Student Name :  <strong>{std.stname}</strong> class : <strong>{std.class}</strong>
+                    </li>
+                </ul>
+            </template>
+           
+        </lightning-card>
+
+    </div>
+
+    <h5>Template Looping - iterator</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="Template looping - iterator">
+            <template iterator:item={stdlist}>
+                <ul class="slds-has-dividers_around-space" key={item.value.roll_no}>
+                    <li class="slds-item slds-var-m-around_x-small">
+                        Student Name :  <strong>{item.value.stname}</strong> class : <strong>{item.value.class}</strong>
+                    </li>
+                </ul>
+            </template>
+           
+        </lightning-card>
+
+    </div>
+
+    <h5>Template Looping - iterator with first and last Property</h5>
+    <div class="slds-var-m-around_x-small">
+        <lightning-card title="Template looping - iterator: first and last">
+            <template iterator:item={stdlist}>
+                <ul class="slds-has-dividers_around-space" key={item.value.roll_no}>
+                    <template if:true={item.first}>
+                        <div class="slds-m-around_x-small">
+                            <strong>Below is the list of secondary students</strong>
+                        </div>
+                    </template>
+                    <li class="slds-item slds-var-m-around_x-small">
+                        Student Name :  <strong>{item.value.stname}</strong> class : <strong>{item.value.class}</strong>
+                    </li>
+                    <template if:true={item.last}>
+                        <div class="slds-m-around_x-small">
+                            <strong>If have any doubts, contact college</strong>
+                        </div>
+                    </template>
+                </ul>
+            </template>
+           
+        </lightning-card>
+
+    </div>
+</template>

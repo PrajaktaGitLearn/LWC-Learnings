@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Fetching Record using wire adapter function">
+        <div class="slds-var-m-around_x-small">
+            Logged In UserId : {userId}<br/>
+            <template if:true={userDetails}>
+                Logged In User Details :<br/><br/>
+                UserName : {userDetails.Name.value}<br/>
+                UserEmail : {userDetails.Email.value}
+            </template>
+            
+        </div>
+    </lightning-card>
+    <div class="slds-var-m-around_x-small"></div>
+    <lightning-card title="Fetching Record using wire adapter property">
+        <div class="slds-var-m-around_x-small">
+            Logged In UserId : {userId}<br/>
+            <template if:true={userDetails}>
+                Logged In User Details :<br/><br/>
+                UserName : {userData.data.fields.Name.value}<br/>
+                UserEmail : {userData.data.fields.Email.value}
+            </template>
+            
+        </div>
+    </lightning-card>
+</template>

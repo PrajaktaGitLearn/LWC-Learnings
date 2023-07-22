@@ -1,0 +1,9 @@
+<template>
+    <h5 class="slds-var-m-around_medium">PubSub Module</h5>
+    <lightning-card title="Publisher Component">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter Text to publish" onkeyup={changeHandler}></lightning-input>
+            <lightning-button label="Publish Data" onclick={publishHandler} variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

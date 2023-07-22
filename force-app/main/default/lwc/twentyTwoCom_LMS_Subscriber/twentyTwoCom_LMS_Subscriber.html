@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="LMS Subscriber B">
+        <div class="slds-var-m-around_x-small">
+            Message Recieved from Publisher : <strong>{recievedMessage}</strong>
+        </div>
+        
+        <div class="slds-var-m-around_x-small">
+            <lightning-input type="text" label="Enter Message to publish" onkeyup={inputHandler}></lightning-input>
+        </div>
+        <div class="slds-var-m-around_x-small">
+            <lightning-button label="Publish to A" variant="brand" onclick={publishHandler} class="slds-p-horizontal_medium"></lightning-button>
+            <lightning-button label="Unsubscribe A" variant="destructive" onclick={unsubscribeHandler}></lightning-button>
+        </div>
+
+    </lightning-card>
+</template>

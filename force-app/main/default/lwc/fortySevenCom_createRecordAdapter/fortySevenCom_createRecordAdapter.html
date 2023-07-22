@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="createRecord Adapter">
+        <div class="slds-var-m-around_x-small">
+            <form class="createForm">
+                <lightning-input label="First Name" name="FirstName" onchange={handleChange} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input label="Last Name" name="LastName" onchange={handleChange} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input label="Phone" name="Phone" type="tel" onchange={handleChange} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input label="Email" name="Email" type="email" onchange={handleChange} class="slds-var-m-bottom_medium"></lightning-input>
+
+                <lightning-button label="Create Contact" variant="brand" onclick={createContactRecord} ></lightning-button>
+            </form>
+        </div>
+    </lightning-card>
+</template>

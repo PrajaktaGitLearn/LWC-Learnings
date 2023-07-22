@@ -1,0 +1,22 @@
+h5{
+    border: 2px solid aquamarine;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color: aquamarine;
+    
+}
+
+b{
+    color: var(--lwc-brandAccessible);
+    background-color: var(--lwc-colorBackground);
+}
+.token{
+    background: var(--lwc-colorBackgroundAltInverse);
+    height: 60px;
+    padding: 15px;
+    
+}
+.btn{
+    background: var(--lwc-colorBackgroundButtonBrand);
+    
+}
